@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Program Kalkulator Segitiga Sederhana</title>
+    
+</head>
+
+<body>
+    <h1>Program untuk menghitung luas dan keliling segitiga</h1>
+    <div class="judulLuas">
+        <h2>Luas Segitiga</h2>
+    </div>
+
+    <div class="gambarSegitiga">
+        <img src="segitiga.png" alt="Gambar segitiga">  
+    </div>
+
+    <div class="rumusLuas">
+        <p>Rumus luas segitiga:
+        <br  />
+        Luas = 1/2 x alas x tinggi</p>
+    </div>
+
+    <h3 style="text-align: center">Menghitung luas segitiga</h3>
+   
+    <div class="hitungLuas">
+
+        <form id="form-luas">
+            <div class="inputLuas">
+                <label for="alas"> Alas :</label>
+                <input type="number" id="alas" placeholder="masukkan nilai alas">
+            </div>
+
+            <div class="inputLuas">
+                <label for="tinggi">Tinggi: </label>
+                <input type="number" id="tinggi" placeholder="masukkan nilai tinggi">
+            </div>
+
+            </br>
+            <button type="button" onclick="hitungLuas()">Hitung luas</button>
+            <button type="reset" onclick="resetLuas()">Reset</button>
+        </form>
+
+        <div class="hasilLuas">
+        <p id="hasilLuas"></p>
+           
+        </div>
+    </div>
+<hr>
+
+<div class="judulKeliling">
+    <h2>Keliling Segitiga</h2>
+</div>
+
+<div class="gambarSegitiga">
+    <img src="segitiga.png" alt="Gambar segitiga">  
+</div>
+
+<div class="rumusKeliling">
+    <p>Rumus keliling segitiga:
+    <br />
+    Luas = sisi A + sisi B + sisi C</p>
+</div>
+
+<h3 style="text-align: center">Menghitung keliling segitiga</h3>
+
+<div class="hitungKeliling">
+
+    <form id="form-keliling">
+        <div class="inputKeliling">
+            <label for="sisiA">Sisi A: </label>
+            <input type="number" id="sisiA" placeholder="masukkan panjang sisi A">
+        </div>
+
+        <div class="inputKeliling">
+            <label for="sisiB">Sisi B: </label>
+            <input type="number" id="sisiB" placeholder="masukkan panjang sisi B">
+        </div>
+
+        <div class="inputKeliling">
+            <label for="sisiC">Sisi C: </label>
+            <input type="number" id="sisiC" placeholder="masukkan panjang sisi C">
+        </div>
+
+        </br>
+        <button type="button" onclick="hitungKeliling()">Hitung keliling</button>
+        <button type="reset" onclick="resetKeliling()">Reset</button>
+    </form>
+
+    <div class="hasilKeliling">
+            <p id="hasilKeliling"></p>
+
+        </div>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/function.js"></script>
+</body>
+</html>
